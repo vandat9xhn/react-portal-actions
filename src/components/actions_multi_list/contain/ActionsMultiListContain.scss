@@ -1,0 +1,23 @@
+.ActionsMultiListContain_separate {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 1px;
+    background-color: #e4e6e9;
+}
+
+.ActionsMultiListContain_div_loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+}
+
+.ActionsMultiListContain_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

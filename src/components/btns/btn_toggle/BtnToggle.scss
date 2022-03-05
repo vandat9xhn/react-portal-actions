@@ -1,0 +1,24 @@
+.BtnToggle {
+    display: inherit;
+    cursor: pointer;
+}
+
+.BtnToggle_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    opacity: 0.75;
+
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+        background-color: #7d7c7c1f;
+    }
+}

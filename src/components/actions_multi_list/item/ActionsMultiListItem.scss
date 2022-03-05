@@ -1,0 +1,31 @@
+.ActionsMultiListItem {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 10px;
+    border-radius: 6px;
+
+    cursor: pointer;
+    &:hover {
+        background-color: #e4e6e9;
+    }
+
+    svg {
+        margin-right: 6px;
+    }
+}
+.ActionsMultiListItem-mobile {
+    padding: 10px;
+    border-radius: 0;
+    border-bottom: 1px solid var(--md-bg-blur);
+}
+
+.ActionsMultiListItem_title {
+    font-weight: 500;
+}
+
+.ActionsMultiListItem_info {
+    line-height: initial;
+    font-size: 13px;
+    color: #757575;
+}

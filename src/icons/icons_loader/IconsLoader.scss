@@ -1,0 +1,9 @@
+.IconsLoader-active {
+    animation: border_loading 1.5s linear infinite;
+}
+
+@keyframes border_loading {
+    to {
+        transform: rotate(360deg);
+    }
+}

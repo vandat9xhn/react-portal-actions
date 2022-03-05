@@ -1,0 +1,68 @@
+.ActionsContainPc-fixed {
+    position: fixed;
+}
+.ActionsContainPc-abs {
+    position: absolute;
+}
+.ActionsContainPc-hidden {
+    opacity: 0;
+}
+
+.ActionsContainPc_contain {
+    position: relative;
+}
+// .
+.ActionsContainPc_action_contain {
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+    }
+}
+
+.ActionsContainPc_caret {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        transform: translate(-50%, -1px);
+
+        border-width: 0px 8px 10px 8px;
+        border-style: solid;
+        border-color: transparent transparent #ccc transparent;
+    }
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        transform: translateX(-50%);
+
+        border-width: 0px 8px 10px 8px;
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+    }
+}
