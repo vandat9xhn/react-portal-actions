@@ -59,7 +59,6 @@ function ActionsHoldMb({
     //
     function handleTouchEnd() {
         StopHold();
-        handleClose();
     }
 
     //
@@ -67,7 +66,7 @@ function ActionsHoldMb({
         <ActionsMb
             title_action={
                 <div
-                    className='ActionsHoldMb_title display-inherit cursor-pointer hv-underline'
+                    className='ActionsHoldMb_title'
                     onTouchStart={handleTouchStart}
                     onTouchEnd={handleTouchEnd}
                 >

@@ -8,7 +8,7 @@ import {
 import ActionsPc, { ActionsPcProps } from '../../actions/pc/_main/ActionsPc';
 
 //
-interface ActionsHoldPcProps
+export interface ActionsHoldPcProps
     extends useActionsHoldProps,
         Omit<
             ActionsPcProps,

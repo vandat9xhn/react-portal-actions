@@ -71,7 +71,7 @@ const App = () => {
             >
                 <div>Click ... to show 'PortalAction'</div>
 
-                <div>
+                <div style={{ display: 'flex' }}>
                     {/* <Actions
                         is_show={is_show}
                         handleClose={handleClose}
@@ -94,17 +94,20 @@ const App = () => {
                         </div>
                     </Actions> */}
 
-                    <ActionsMultiList
-                        handleClose={handleClose}
-                        toggleShow={toggleShow}
-                        handleAction={handleAction}
-                        handle_API_L={handle_API_L}
-                    />
+                    <div style={{ marginRight: '8px', marginLeft: '8px' }}>
+                        <ActionsMultiList
+                            handleClose={handleClose}
+                            toggleShow={toggleShow}
+                            handleAction={handleAction}
+                            handle_API_L={handle_API_L}
+                        />
+                    </div>
 
                     <ActionsHold
                         title_action={
                             <div style={{ cursor: 'pointer' }}>Hover me!</div>
                         }
+                        class_action_contain_mb='action-contain-mb-center'
                     >
                         <div
                             style={{
@@ -134,6 +137,7 @@ const App = () => {
 };
 
 export default App;
+
 ```
 
 ## License
